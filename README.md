@@ -17,6 +17,8 @@ kube-proxy: Maintains network rules on nodes. These network rules allow network 
 
 Container Runtime: The software responsible for running containers. Kubernetes supports several container runtimes including Docker, containerd, and others. It's responsible for pulling the container image from a registry, unpacking the container, and running the application.
 
+![image](https://github.com/devops-manitechy/components-in-a-Kubernetes-architecture/assets/70797344/f87cafcf-d705-42bd-aa0e-caff4ccb6dbc)
+
 
         +------------------------+
         |        Kubernetes      |
