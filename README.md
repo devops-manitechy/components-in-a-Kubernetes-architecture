@@ -19,32 +19,3 @@ Container Runtime: The software responsible for running containers. Kubernetes s
 
 ![image](https://github.com/devops-manitechy/components-in-a-Kubernetes-architecture/assets/70797344/f87cafcf-d705-42bd-aa0e-caff4ccb6dbc)
 
-
-        +------------------------+
-        |        Kubernetes      |
-        |       Master Node      |
-        +------------------------+
-                 |
-       +---------+-----------+
-       |                     |
-+------+--------------------+--------+
-|     API Server         Scheduler   |
-+-------------------------------------+
-|                etcd                 |
-+-------------------------------------+
-|         Controller Manager          |
-+-------------------------------------+
-            |      |      |
-  +---------+------+------+---------+
-  |         |             |         |
-Worker   Worker        Worker    Worker
-Node 1   Node 2        Node 3    Node 4
-+---+     +---+         +---+     +---+
-|   |     |   |         |   |     |   |
-| Kubelet|Kubelet|  Kubelet|Kubelet|
-| kube-  | kube-  |  kube-  | kube-  |
-| proxy  | proxy  |  proxy  | proxy  |
-+-------+ +-------+ +-------+ +-------+
-|   Container Runtime (e.g., Docker)  |
-+-------------------------------------+
-
